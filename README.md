@@ -15,9 +15,8 @@ Download and unzip each zip file: conda_environment.7z, executables.zip, and sub
 
 "C:\General_Models_WRR\general-models"
 
-"C:\General_Models_WRR\input_data"
+C:\General_Models_WRR\input_data
 
-"C:\General_Models_WRR\readme"
 
 "C:\General_Models_WRR\subprojects"
                      
