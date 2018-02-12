@@ -5,6 +5,7 @@ Genmod (General Groundwater-Model Construction System Version 0.1)
 The Genmod repository contains files that support the General Groundwater-Model Construction System Version 0.1. Available at: https://doi.org/10.5066/F7FQ9VTD
 
 Each of the zip files are separate components of the directory-tree structure for Genmod.
+
 Procedure:
 
 Download and unzip each zip file: conda_environment.7z, executables.zip, and subprojects.zip and place the resulting folder into a top-level directory called 'C:\General_Models_WRR'. See the directory-tree structure for Genmod below:
