@@ -23,7 +23,7 @@ C:\General_Models_WRR\readme
 C:\General_Models_WRR\subprojects
                      
 The directory structure must be maintained to enable the system to function properly.
-One zip file for input_data is found at the ftp site:
+One zip file for input_data (uncompressed size is 41 GB) is found at the ftp site:
 
 ftp://ftpext.usgs.gov/pub/er/ma/northborough/JS_WRR/General_Models_WRR
 
