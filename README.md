@@ -9,6 +9,7 @@ Each of the zip files are separate components of the directory-tree structure fo
 Procedure:
 
 Download and unzip each zip file: conda_environment.7z, executables.zip, and subprojects.zip and place the resulting folder into a top-level directory called 'C:\General_Models_WRR'. Download Genmod+README.pdf and place it in the \readme folder. See the directory-tree structure for Genmod below:
+
 C:\General_Models_WRR\conda_environment
 
 C:\General_Models_WRR\executables
