@@ -90,47 +90,53 @@ ft2m = 0.3048006096012192
 
 
 # set pathnames for data sources
-base_dir = 'C:/1_NAWQA_2017_reverted_version_for_WRR'
+base_dir = 'C:/General_Models_WRR'
 proj_dir = base_dir + '/subprojects/siteGeneral'
 
+#used for many things            published  http://www.horizon-systems.com/NHDPlus/index.php 
 nhd_dir = base_dir + '/input_data/NHDPlusV2Data'
 
-geol_dir = base_dir + '/input_data/USGS_DS_656/shapefiles'
 
-recharge_dir = base_dir + '/input_data/recharge'
+#this is the current means of identifying surficial geology       not yet published
+qa_dir = base_dir + '/input_data/Geology'
 
+#used for surficial thickness
+#Soller, D.R., and Garrity, C.P., 2018, Quaternary sediment thickness and bedrock topography of the glaciated United States east of the Rocky Mountains: U.S. Geological Survey Scientific Investigations Map SIM-3392, doi 10.3133/sim3392.
+# https://doi.org/10.3133/sim3392
+soller_thick_dir = base_dir + '/input_data/Soller_Provisional_DriftThickness'   
+
+
+#used for bedrock surface elevation
+#Soller, D.R., and Garrity, C.P., 2018, Quaternary sediment thickness and bedrock topography of the glaciated United States east of the Rocky Mountains: U.S. Geological Survey Scientific Investigations Map SIM-3392, doi 10.3133/sim3392.
+# https://doi.org/10.3133/sim3392
 thickness_dir = base_dir + '/input_data/BedrockTopo_DRS_11-13'
 
-surf_geol_file = base_dir + '/GenModData/Geology/QASM_D2.shp'
-surf_geol_item = 'MU_CStrati'
-surf_geol_lookup_file = '/GenModData/Geology/geology_lut.txt'
-bedrock_geol_file = base_dir + '/GenModData/Geology/BR_Geology.shp'
-bedrock_geol_item = 'BR_Class'
-bedrock_geol_lookup_file = '/GenModData/Geology/geology_lut.txt'
+#used for recharge, in review
+#            Here is the citation for the data release: 
+#            Trost, J.J., Soil-Water-Balance (SWB) Model used to Simulate Potential Groundwater Recharge
+#            for the Glacial Aquifer System East of the Rocky Mountains, 1980-2011. U.S. Geological Survey Data 
+#            release, https://doi.org/10.5066/F7XW4HRJ.
+#
+#            Here is the draft citation for the report:
+#            Trost, J.J., Roth, J.L., Westenbroek, S.M., and Reeves, H.W., 2018, Simulation of Potential 
+#            Groundwater Recharge for the Glacial Aquifer System East of the Rocky Mountains, 1980-2011, 
+#            using the Soil-Water-Balance model, U.S. Geological Survey Scientific Investigations
+#            Report 2018-XXXX, XX p. http://dx.doi.org/xx.xxxx/xxxxxxx. 
+swb_dir = base_dir + '/input_data/SWB_RechargeGrid'
 
-thickness_file = base_dir + '/GenModData/FrameworkTif/BestQuatDepth2.tif'
-conf_thickness_file = base_dir + '/GenModData/FrameworkTif/BotAqDepth3.tif'
-conf_prob_file = base_dir + '/GenModData/FrameworkTif/ConfIfAq.tif'
-quat_pct_coarse_file = base_dir + '/GenModData/FrameworkTif/QuatPctCoarse.tif'
+#not used anymore, superceded by qa_dir    but geol_dir includes     factor_added_stack_map.shp
+geol_dir = base_dir + '/input_data/USGS_DS_656/shapefiles'
 
-recharge_file = base_dir + '/GenModData/recharge/Nawqa_SWB_mm1.tif'
+#not used
+recharge_dir = base_dir + '/input_data/recharge'
+
+#not used for recharge
 alt_recharge_file = '/input_data/recharge/rch_mm_Reitz.tif'
 
-mohp_dir = base_dir + '/input_data/HydroPosition'
-mohp2_dir = base_dir + '/input_data/Hydroposition2/MOHP_TopoCatchments_CleanedVersion'
-thies2_dir = base_dir + '/input_data/Hydroposition2/MOHP_ThiessCatchments_CleanedVerion'
-pour_dir = base_dir + '/input_data/Merged'
-swb_dir = base_dir + '/input_data/SWB_RechargeGrid'
+
+#used only if available?
 surg_dir = base_dir + '/input_data/SSURGO'
-qa_dir = base_dir + '/input_data/Geology'
-soller_thick_dir = base_dir + '/input_data/Soller_Provisional_DriftThickness'
-nlcd_dir = base_dir + '/input_data/NLCD'
-#well_pth = base_dir + '/input_data/all_glac_wells.shp'
-well_pth = base_dir + '/input_data/glac_wells_PAS2.shp'
-pumping_rate_pth = base_dir + '/input_data/PumpingRates.txt'
-gage_file = base_dir + '/GenModData/gages/GagesRunoff_w_stats.shp'
-lpm_dir = base_dir + '/input_data/LPM_AgeDists'
-tracer_lpm_file= base_dir + '/GenModData/Copy of TracerLPM_V_1_0B.xlsm'
+
 
 # paths to executables
 mfpth = base_dir + '/executables/MODFLOW-NWT_1.0.9/bin/MODFLOW-NWT_64.exe'
