@@ -22,7 +22,7 @@ C:\General_Models_WRR\readme
 
 C:\General_Models_WRR\subprojects
                      
-Four compressed files (Models_1.7z, Models_2.7z, Models_3.7z, and Models_4.7z) contain calibrated models made with Genmod. Place the contents of each file in the subprojects/siteGeneral folder.
+Four compressed files (Models_1.7z, Models_2.7z, Models_3.7z, and Models_4.7z) contain calibrated models made with Genmod. Place the contents of each file in the C:\General_Models_WRR\subprojects\siteGeneral folder.
 
 The directory structure must be maintained to enable the system to function properly.
 One zip file for input_data (uncompressed size is 41 GB) is found at the ftp site:
