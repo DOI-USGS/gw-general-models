@@ -32,6 +32,9 @@ stream_width : float
     Width assigned to river or drain in m. (NB3)
 stream_bed_thk : float
     Streambed thickness assigned to river or drain in m. (NB3)
+stream_bed_kadjust : float
+    Factor to adjust K used for computing the drain/river conductance, dimensionless. (NB3)
+
 bedrock_thk : float
     Thickness assigned to bottom bedrock layer if present, in m. (NB3)
 model_dict : nested dictionary
@@ -126,6 +129,7 @@ rock_riv_dict['stream_width'] = 10. * ft2m
 rock_riv_dict['stream_bed_thk'] = 1. * ft2m
 rock_riv_dict['river_depth'] = 10. * ft2m
 rock_riv_dict['bedrock_thk'] = 100.0 * ft2m
+rock_riv_dict['stream_bed_kadjust'] = 1.0
 
 # create dictionary for model location information.
 model_dict = {}
