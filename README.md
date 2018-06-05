@@ -1,6 +1,6 @@
 # Genmod1.0—the General Groundwater-Model (General Models) Construction System Version 1.0, revised June 2018
 
-Genmod1.0 (report available at: https://doi.org/10.5066/F72V2FDC and jupyter notebooks (JN) and supprting files available at https://github.com/usgs/gw-general-models.git) documents subsequent revisions and improvements to the JN of Genmod0.1 (see section below). 
+Genmod1.0 (report available at: https://doi.org/10.5066/F72V2FDC and jupyter notebooks (JN) and supporting files available at https://github.com/usgs/gw-general-models.git) documents subsequent revisions and improvements to the JN of Genmod0.1 (see section below). 
 
 Refer to folder "gw-general-models/Genmod1.0/" for updated files for Genmod1.0.
 
