@@ -2,7 +2,7 @@
 
 Genmod1.0 (available at: https://doi.org/10.5066/F72V2FDC and https://github.com/usgs/gw-general-models.git) documents subsequent revisions and improvements to the jupyter notebooks (JN) of Genmod0.1 (see section below). 
 
-Refer to folder "gw-general-models/Genmod1.0/" for the updated files for Genmod1.0.
+Refer to folder "gw-general-models/Genmod1.0/" for updated files for Genmod1.0.
 
 To run the notebooks for Genmod1.0, follow instructions found in file Genmod1p0_userguide_GITHUB_README_June2018.pdf
 
