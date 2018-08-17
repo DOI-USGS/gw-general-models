@@ -6,7 +6,7 @@ A user is encouraged to read the user guide report available at: https://doi.org
 
 Refer to folder "gw-general-models/Genmod1.0/" for updated files for Genmod1.0.
 
-The rest of the files and folders found at "gw-general-models” refer to Genmod0.1.
+The rest of the files and folders found at "gw-general-models” are associated with Genmod0.1.
 
 
 # Genmod0.1 (General Groundwater-Model Construction System Version 0.1)
