@@ -2,7 +2,7 @@
 
 Genmod1.0 (user guide report available at: https://doi.org/10.5066/F72V2FDC and jupyter notebooks [JN] and supporting files available at https://github.com/usgs/gw-general-models.git) documents subsequent revisions and improvements to the JN of Genmod0.1 (see section below).
 
-A user is encouraged to read the user guide report available at: https://doi.org/10.5066/F72V2FDC before attempting to run the JN of Genmod1.0. Also see instruction file “Genmod1p0_userguide_GITHUB_README_June2018.pdf” found in folder "gw-general-models/Genmod1.0/".
+A user is encouraged to read the user guide report available at: +++Put citation doi here+++ before attempting to run the JN of Genmod1.0. Also see instruction file “Genmod1p0_userguide_GITHUB_README_Nov2018.pdf” found in folder "gw-general-models/Genmod1.0/".
 
 Refer to folder "gw-general-models/Genmod1.0/" for updated files for Genmod1.0.
 
