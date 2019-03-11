@@ -80,31 +80,42 @@ ratio_2_mean = 0.25
 # set up model scenario
 # choose one of the following or make a new one
 
-scen = 3
+scen = 5
 
 if scen == 1:
     scenario_dir = 'base'
     add_bedrock = False
     num_surf_layers = 1
     GHB = False
+    GHB_sea = False
 
 if scen == 2:
     scenario_dir = 'bedrock'
     add_bedrock = True
     num_surf_layers = 1
     GHB = False
+    GHB_sea = False
 
 if scen == 3:
     scenario_dir = 'layers'
     add_bedrock = True
     num_surf_layers = 3
     GHB = False
-   
+    GHB_sea = False
+
 if scen == 4:
     scenario_dir = 'layers_GHB'
     add_bedrock = True
     num_surf_layers = 3
     GHB = True
+    GHB_sea = False
+	
+if scen == 5:
+    scenario_dir = 'layers_GHB_sea'
+    add_bedrock = True
+    num_surf_layers = 3
+    GHB = False
+    GHB_sea = True
     
 # make initial guesses for K
 # new values will happen because of the JN4 in which parameter estimation occurs
@@ -129,12 +140,20 @@ rock_riv_dict['stream_bed_thk'] = 1. * ft2m
 rock_riv_dict['river_depth'] = 10. * ft2m
 rock_riv_dict['bedrock_thk'] = 100.0 * ft2m
 rock_riv_dict['stream_bed_kadjust'] = 1.0
+rock_riv_dict['coastal_sed_thk'] = 5.0
+rock_riv_dict['coastal_sed_kadjust'] = 50.0
+
+#variables for sea-level
+sea_level = 0 #elevation of sea level (m)
+den_salt = 1022 #density of saltwater in kg/m3, this is based on 29 ppt salinity at 10C
+den_fresh = 1000 #density of freshwater in kg/m3
 
 # Create dictionary for model location information. Example dictionaries, commented-out, for other model areas follow the
 # example model, "Assabet".
 model_dict = {}
 
 model_dict['Assabet'] = {'ws':'Assabet','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Concord_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
+model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
 #model_dict['Board2'] = {'ws':'Board2','vpu':'NHDPlusGL/NHDPlus04','rpu':'ned04d','df':'Board_domain.shp', 'ib_filter':0, 'K_bedrock':100 * ft2m}
 #model_dict['CONN'] = {'ws':'CONN','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Pomperaug_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
 #model_dict['huc_07030001_domain'] = {'ws':'huc_07030001_domain','vpu':'NHDPlusMS/NHDPlus07','rpu':'ned07c','df':'huc_07030001_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
