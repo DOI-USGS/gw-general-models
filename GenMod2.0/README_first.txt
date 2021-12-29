@@ -5,9 +5,10 @@ is provided in text inside the notebooks. GSMs are discussed in
 
     Starn, J. J., Kauffman, L. J., Carlson, C. S., Reddy, J. E., & Fienen, M. N. (2021). Three-dimensional distribution of groundwater residence time metrics in the glaciated United States using metamodels trained on general numerical simulation models. Water Resources Research, 57, e2020WR027335. https://doi.org/10.1029/2020WR027335
 
-Two preparatory steps are required before the GSM process is started.
+Three preparatory steps are required before the GSM process is started.
     1. Create a Python environment as described in ReadMe_create_python_environment.txt
     2. Copy the national_spatial_data directory as described in README_geospatial_data_processing.txt
+    3. Have available executable files for MODFLOW 6 (6.1.1 was used in the example) and MODPATH 7 (7.2.001 was used in the example). The location of these files is specified in the notebooks.
     
 Once the environment has been activated, GSMs are created using a sequence of Jupyter notebooks. Static 
 views of the notebooks, including selected output, are provided in pdf renderings of the notebooks.
@@ -29,13 +30,15 @@ General_Simulation_Model_3_Calibrate_Model_Bayes.ipynb
     This notebook calibrates the GSM. There is user interaction available throughout the notebook, but defaults are provided that should work in most cases. The calibrated model is placed in a directory 
     called "optimal_model".
     
+General_Simulation_Model_4_Multiple_runs_and_plots.ipynb
+    This notebook is for evaluating uncertainty. It runs the model for multiple parameter sets that lie on the Pareto front, but it is just a prototype.  More work needs to be done to evaluate the results of multiple parameter sets on travel time distributions.
+    
 General_Simulation_Model_5_ParticleTrackingfromStreams.ipynb
     This notebook creates a MODFLOW7 simulation. Particles are placed in a line at the location of streams in 
     proportion to their groundwater inflow. Particles are tracked backward to their point of entry into the aquifer and their travel times are recorded in a modified endpoint file. MODPATH7 output is placed in the "/optimal_model" directory.
     
-General_Simulation_Model_5_ParticleTrackingfromStreams_plots.ipynb
-    This notebook is a work-in-progress. The goal is for it to process travel time data by stream reach
-    for use in convolution, which will give water-quality information for stream reaches given an input time series. Currently this notebook produces a spatial dataset of travel time characteristics by stream reach (nhd_age shapefile) and several images (png) of their spatial distribution. 
+General_Simulation_Model_6_Baseflow_Age_Distributions.ipynb
+    This notebook produces a spatial dataset of travel time characteristics by stream reach (nhd_age shapefile) and several images (png) of their spatial distribution.   
     
 Notebooks using to process particle travel time data for water wells rather streams can be found at
 
