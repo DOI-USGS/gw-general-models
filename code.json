@@ -18,10 +18,10 @@
 
     "homepageURL": "https://github.com/usgs/gw-general-models",
     "disclaimerURL": "https://github.com/usgs/gw-general-models/blob/master/DISCLAIMER.md",
-    "repositoryUrl": "https://github.com/usgs/gw-general-models.git",
+    "repositoryURL": "https://github.com/usgs/gw-general-models.git",
     "vcs": "git",
 
-    "laborHours": null,
+    "laborHours": -1,
 
     "tags": [
       "groundwater",
